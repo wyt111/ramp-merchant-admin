@@ -68,7 +68,7 @@
                   v-model="accountDetail.appSecrete"
                   :disabled="true">
                 </el-input>
-                <p class="editPassword-btn" @click="handleOperation('refreshAppsecret')">Refrseh</p>
+                <p class="editPassword-btn" @click="handleOperation('refreshAppsecret')">Refresh</p>
               </div>
             </div>
           </el-col>
@@ -110,10 +110,10 @@ import BindGoogleAuthenticator from './childrens/bindGoogleAuthenticator'
 import RefreshAppsecret from './childrens/refreshAppsecret'
 import Ip from './childrens/ip'
 import CheckGoogle2FA from './childrens/checkGoogle2FA'
-import {getAccountDetail, getFreezeCheck} from '@/api/account'
+import { getAccountDetail, getFreezeCheck } from '@/api/account'
 
 export default {
-  name: "Account",
+  name: 'Account',
   components: {
     EditPassword,
     BindGoogleAuthenticator,
